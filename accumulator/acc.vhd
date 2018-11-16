@@ -1,3 +1,9 @@
+----------------------------------------
+--		author: Paolo Calao			
+--		mail:	paolo.calao@gmail.com
+--		title:	acc.vhd
+----------------------------------------
+
 library ieee;
 use ieee.std_logic_1164.all;
 use ieee.std_logic_unsigned.all;
@@ -11,7 +17,6 @@ entity ACC is
       		CLK        : in  std_logic;
       		RST_n      : in  std_logic;
       		ACCUMULATE : in  std_logic;
-       		--ACC_EN_n   : in  std_logic;  -- optional use of the enable
       		Y          : out std_logic_vector(NBIT - 1 downto 0));
 
 end ACC;

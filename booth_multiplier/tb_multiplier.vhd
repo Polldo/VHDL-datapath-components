@@ -1,3 +1,9 @@
+----------------------------------------
+--		author: Paolo Calao			
+--		mail:	paolo.calao@gmail.com
+--		title:	tb_multiplier.vhd
+----------------------------------------
+
 library ieee;
 use ieee.std_logic_1164.all;
 use ieee.std_logic_unsigned.all;

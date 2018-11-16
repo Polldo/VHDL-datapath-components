@@ -1,6 +1,12 @@
+----------------------------------------
+--		author: Paolo Calao			
+--		mail:	paolo.calao@gmail.com
+--		title:	tb_rca_generic.vhd
+----------------------------------------
+
 library ieee; 
 use ieee.std_logic_1164.all; 
-use ieee.numeric_std.all; -- we need a conversion to unsigned 
+use ieee.numeric_std.all;
 
 entity TBRCA_GEN is 
 end TBRCA_GEN; 
@@ -21,7 +27,7 @@ architecture TEST of TBRCA_GEN is
   end component;
   
 
-  constant Period: time := 1 ns; -- Clock period (1 GHz)
+  constant Period: time := 1 ns; 
   signal A, B, S : std_logic_vector(num_bit-1 downto 0);
   signal Ci, Co : std_logic;
 
@@ -31,8 +37,7 @@ Begin
 	   generic map (DRCAS => 0.02 ns, DRCAC => 0.02 ns) 
 	   port map (A, B, Ci, S, Co);
 
--- Open file, make a load, and wait for a timeout in case of design error.
-  STIMULUS1: process
+  S1: process
   begin
     A <= "0000100000010101";
     B <= "0000001100100001";

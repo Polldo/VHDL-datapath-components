@@ -1,3 +1,9 @@
+----------------------------------------
+--		author: Paolo Calao			
+--		mail:	paolo.calao@gmail.com
+--		title:	window_registerfile.vhd
+----------------------------------------
+
 library IEEE;
 use IEEE.std_logic_1164.all;
 use IEEE.std_logic_unsigned.all;

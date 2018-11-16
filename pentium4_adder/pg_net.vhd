@@ -1,3 +1,9 @@
+----------------------------------------
+--		author: Paolo Calao			
+--		mail:	paolo.calao@gmail.com
+--		title:	pg_net.vhd
+----------------------------------------
+
 library ieee; 
 use ieee.std_logic_1164.all; 
 use ieee.std_logic_unsigned.all;

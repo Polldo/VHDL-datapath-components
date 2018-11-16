@@ -1,5 +1,10 @@
-library IEEE;
+----------------------------------------
+--		author: Paolo Calao			
+--		mail:	paolo.calao@gmail.com
+--		title:	tb_window_registerfile.vhd
+----------------------------------------
 
+library IEEE;
 use IEEE.std_logic_1164.all;
 use WORK.all;
 use WORK.log_pkg.all;

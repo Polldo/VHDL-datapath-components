@@ -1,3 +1,9 @@
+----------------------------------------
+--		author: Paolo Calao			
+--		mail:	paolo.calao@gmail.com
+--		title:	fa.vhd
+----------------------------------------
+
 library ieee; 
 use ieee.std_logic_1164.all; 
 
@@ -17,7 +23,6 @@ begin
 
   S <= A xor B xor Ci after DFAS;
   Co <= (A and B) or (B and Ci) or (A and Ci) after DFAC;
-  -- Co <= (A and B) or (B and Ci) or (A and Ci);
   
 end BEHAVIORAL;
 
