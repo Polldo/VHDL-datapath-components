@@ -1,0 +1,627 @@
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -nworst 10
+        -max_paths 10
+        -sort_by group
+Design : P4_ADDER_NBIT32_DCARRY4
+Version: Z-2007.03-SP1
+Date   : Wed Apr 11 23:07:16 2018
+****************************************
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+  Startpoint: A[0] (input port)
+  Endpoint: S[22] (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  P4_ADDER_NBIT32_DCARRY4
+                     5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  input external delay                                    0.00       0.00 f
+  A[0] (in)                                               0.00       0.00 f
+  CARRY_GEN/A[0] (CARRY_GENERATOR_NBIT32_DCARRY4)         0.00       0.00 f
+  CARRY_GEN/PG_NET_INIT/A[0] (PG_NET_NBIT32)              0.00       0.00 f
+  CARRY_GEN/PG_NET_INIT/C_0_NET_GEN/A (PG_NET_GENERATOR_0)
+                                                          0.00       0.00 f
+  CARRY_GEN/PG_NET_INIT/C_0_NET_GEN/U1/Z (XOR2_X1)        0.08       0.08 f
+  CARRY_GEN/PG_NET_INIT/C_0_NET_GEN/P (PG_NET_GENERATOR_0)
+                                                          0.00       0.08 f
+  CARRY_GEN/PG_NET_INIT/U3/ZN (AOI21_X1)                  0.04       0.12 r
+  CARRY_GEN/PG_NET_INIT/U2/ZN (INV_X1)                    0.02       0.14 f
+  CARRY_GEN/PG_NET_INIT/G_NET[1] (PG_NET_NBIT32)          0.00       0.14 f
+  CARRY_GEN/G_GEN_1/G_k_1_j (G_BLOCK_0)                   0.00       0.14 f
+  CARRY_GEN/G_GEN_1/U2/ZN (AOI21_X1)                      0.04       0.18 r
+  CARRY_GEN/G_GEN_1/U1/ZN (INV_X1)                        0.02       0.21 f
+  CARRY_GEN/G_GEN_1/G_i_j (G_BLOCK_0)                     0.00       0.21 f
+  CARRY_GEN/G_GEN_2/G_k_1_j (G_BLOCK_8)                   0.00       0.21 f
+  CARRY_GEN/G_GEN_2/U2/ZN (AOI21_X1)                      0.04       0.25 r
+  CARRY_GEN/G_GEN_2/U1/ZN (INV_X1)                        0.04       0.29 f
+  CARRY_GEN/G_GEN_2/G_i_j (G_BLOCK_8)                     0.00       0.29 f
+  CARRY_GEN/G_GEN_3/G_k_1_j (G_BLOCK_7)                   0.00       0.29 f
+  CARRY_GEN/G_GEN_3/U2/ZN (AOI21_X1)                      0.05       0.34 r
+  CARRY_GEN/G_GEN_3/U1/ZN (INV_X1)                        0.04       0.38 f
+  CARRY_GEN/G_GEN_3/G_i_j (G_BLOCK_7)                     0.00       0.38 f
+  CARRY_GEN/G_GEN_4/G_k_1_j (G_BLOCK_6)                   0.00       0.38 f
+  CARRY_GEN/G_GEN_4/U2/ZN (AOI21_X1)                      0.05       0.44 r
+  CARRY_GEN/G_GEN_4/U1/ZN (INV_X1)                        0.05       0.49 f
+  CARRY_GEN/G_GEN_4/G_i_j (G_BLOCK_6)                     0.00       0.49 f
+  CARRY_GEN/G_GEN_EACH_A_5_3/G_k_1_j (G_BLOCK_1)          0.00       0.49 f
+  CARRY_GEN/G_GEN_EACH_A_5_3/U2/ZN (AOI21_X1)             0.06       0.55 r
+  CARRY_GEN/G_GEN_EACH_A_5_3/U1/ZN (INV_X1)               0.04       0.58 f
+  CARRY_GEN/G_GEN_EACH_A_5_3/G_i_j (G_BLOCK_1)            0.00       0.58 f
+  CARRY_GEN/C[4] (CARRY_GENERATOR_NBIT32_DCARRY4)         0.00       0.58 f
+  SUM_GEN/Ci[5] (SUM_GENERATOR_NBIT4_NBLOCK8)             0.00       0.58 f
+  SUM_GEN/CARRY_BLOCK_6/Ci (CARRY_SELECT_BLOCK_N4_3)      0.00       0.58 f
+  SUM_GEN/CARRY_BLOCK_6/MUX21/SEL (MUX21_GENERIC_N4_3)
+                                                          0.00       0.58 f
+  SUM_GEN/CARRY_BLOCK_6/MUX21/U2/Z (MUX2_X1)              0.07       0.65 r
+  SUM_GEN/CARRY_BLOCK_6/MUX21/Y[2] (MUX21_GENERIC_N4_3)
+                                                          0.00       0.65 r
+  SUM_GEN/CARRY_BLOCK_6/S[2] (CARRY_SELECT_BLOCK_N4_3)
+                                                          0.00       0.65 r
+  SUM_GEN/S[22] (SUM_GENERATOR_NBIT4_NBLOCK8)             0.00       0.65 r
+  S[22] (out)                                             0.00       0.65 r
+  data arrival time                                                  0.65
+  --------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: A[0] (input port)
+  Endpoint: S[23] (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  P4_ADDER_NBIT32_DCARRY4
+                     5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  input external delay                                    0.00       0.00 f
+  A[0] (in)                                               0.00       0.00 f
+  CARRY_GEN/A[0] (CARRY_GENERATOR_NBIT32_DCARRY4)         0.00       0.00 f
+  CARRY_GEN/PG_NET_INIT/A[0] (PG_NET_NBIT32)              0.00       0.00 f
+  CARRY_GEN/PG_NET_INIT/C_0_NET_GEN/A (PG_NET_GENERATOR_0)
+                                                          0.00       0.00 f
+  CARRY_GEN/PG_NET_INIT/C_0_NET_GEN/U1/Z (XOR2_X1)        0.08       0.08 f
+  CARRY_GEN/PG_NET_INIT/C_0_NET_GEN/P (PG_NET_GENERATOR_0)
+                                                          0.00       0.08 f
+  CARRY_GEN/PG_NET_INIT/U3/ZN (AOI21_X1)                  0.04       0.12 r
+  CARRY_GEN/PG_NET_INIT/U2/ZN (INV_X1)                    0.02       0.14 f
+  CARRY_GEN/PG_NET_INIT/G_NET[1] (PG_NET_NBIT32)          0.00       0.14 f
+  CARRY_GEN/G_GEN_1/G_k_1_j (G_BLOCK_0)                   0.00       0.14 f
+  CARRY_GEN/G_GEN_1/U2/ZN (AOI21_X1)                      0.04       0.18 r
+  CARRY_GEN/G_GEN_1/U1/ZN (INV_X1)                        0.02       0.21 f
+  CARRY_GEN/G_GEN_1/G_i_j (G_BLOCK_0)                     0.00       0.21 f
+  CARRY_GEN/G_GEN_2/G_k_1_j (G_BLOCK_8)                   0.00       0.21 f
+  CARRY_GEN/G_GEN_2/U2/ZN (AOI21_X1)                      0.04       0.25 r
+  CARRY_GEN/G_GEN_2/U1/ZN (INV_X1)                        0.04       0.29 f
+  CARRY_GEN/G_GEN_2/G_i_j (G_BLOCK_8)                     0.00       0.29 f
+  CARRY_GEN/G_GEN_3/G_k_1_j (G_BLOCK_7)                   0.00       0.29 f
+  CARRY_GEN/G_GEN_3/U2/ZN (AOI21_X1)                      0.05       0.34 r
+  CARRY_GEN/G_GEN_3/U1/ZN (INV_X1)                        0.04       0.38 f
+  CARRY_GEN/G_GEN_3/G_i_j (G_BLOCK_7)                     0.00       0.38 f
+  CARRY_GEN/G_GEN_4/G_k_1_j (G_BLOCK_6)                   0.00       0.38 f
+  CARRY_GEN/G_GEN_4/U2/ZN (AOI21_X1)                      0.05       0.44 r
+  CARRY_GEN/G_GEN_4/U1/ZN (INV_X1)                        0.05       0.49 f
+  CARRY_GEN/G_GEN_4/G_i_j (G_BLOCK_6)                     0.00       0.49 f
+  CARRY_GEN/G_GEN_EACH_A_5_3/G_k_1_j (G_BLOCK_1)          0.00       0.49 f
+  CARRY_GEN/G_GEN_EACH_A_5_3/U2/ZN (AOI21_X1)             0.06       0.55 r
+  CARRY_GEN/G_GEN_EACH_A_5_3/U1/ZN (INV_X1)               0.04       0.58 f
+  CARRY_GEN/G_GEN_EACH_A_5_3/G_i_j (G_BLOCK_1)            0.00       0.58 f
+  CARRY_GEN/C[4] (CARRY_GENERATOR_NBIT32_DCARRY4)         0.00       0.58 f
+  SUM_GEN/Ci[5] (SUM_GENERATOR_NBIT4_NBLOCK8)             0.00       0.58 f
+  SUM_GEN/CARRY_BLOCK_6/Ci (CARRY_SELECT_BLOCK_N4_3)      0.00       0.58 f
+  SUM_GEN/CARRY_BLOCK_6/MUX21/SEL (MUX21_GENERIC_N4_3)
+                                                          0.00       0.58 f
+  SUM_GEN/CARRY_BLOCK_6/MUX21/U1/Z (MUX2_X1)              0.07       0.65 r
+  SUM_GEN/CARRY_BLOCK_6/MUX21/Y[3] (MUX21_GENERIC_N4_3)
+                                                          0.00       0.65 r
+  SUM_GEN/CARRY_BLOCK_6/S[3] (CARRY_SELECT_BLOCK_N4_3)
+                                                          0.00       0.65 r
+  SUM_GEN/S[23] (SUM_GENERATOR_NBIT4_NBLOCK8)             0.00       0.65 r
+  S[23] (out)                                             0.00       0.65 r
+  data arrival time                                                  0.65
+  --------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: A[0] (input port)
+  Endpoint: S[24] (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  P4_ADDER_NBIT32_DCARRY4
+                     5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  input external delay                                    0.00       0.00 f
+  A[0] (in)                                               0.00       0.00 f
+  CARRY_GEN/A[0] (CARRY_GENERATOR_NBIT32_DCARRY4)         0.00       0.00 f
+  CARRY_GEN/PG_NET_INIT/A[0] (PG_NET_NBIT32)              0.00       0.00 f
+  CARRY_GEN/PG_NET_INIT/C_0_NET_GEN/A (PG_NET_GENERATOR_0)
+                                                          0.00       0.00 f
+  CARRY_GEN/PG_NET_INIT/C_0_NET_GEN/U1/Z (XOR2_X1)        0.08       0.08 f
+  CARRY_GEN/PG_NET_INIT/C_0_NET_GEN/P (PG_NET_GENERATOR_0)
+                                                          0.00       0.08 f
+  CARRY_GEN/PG_NET_INIT/U3/ZN (AOI21_X1)                  0.04       0.12 r
+  CARRY_GEN/PG_NET_INIT/U2/ZN (INV_X1)                    0.02       0.14 f
+  CARRY_GEN/PG_NET_INIT/G_NET[1] (PG_NET_NBIT32)          0.00       0.14 f
+  CARRY_GEN/G_GEN_1/G_k_1_j (G_BLOCK_0)                   0.00       0.14 f
+  CARRY_GEN/G_GEN_1/U2/ZN (AOI21_X1)                      0.04       0.18 r
+  CARRY_GEN/G_GEN_1/U1/ZN (INV_X1)                        0.02       0.21 f
+  CARRY_GEN/G_GEN_1/G_i_j (G_BLOCK_0)                     0.00       0.21 f
+  CARRY_GEN/G_GEN_2/G_k_1_j (G_BLOCK_8)                   0.00       0.21 f
+  CARRY_GEN/G_GEN_2/U2/ZN (AOI21_X1)                      0.04       0.25 r
+  CARRY_GEN/G_GEN_2/U1/ZN (INV_X1)                        0.04       0.29 f
+  CARRY_GEN/G_GEN_2/G_i_j (G_BLOCK_8)                     0.00       0.29 f
+  CARRY_GEN/G_GEN_3/G_k_1_j (G_BLOCK_7)                   0.00       0.29 f
+  CARRY_GEN/G_GEN_3/U2/ZN (AOI21_X1)                      0.05       0.34 r
+  CARRY_GEN/G_GEN_3/U1/ZN (INV_X1)                        0.04       0.38 f
+  CARRY_GEN/G_GEN_3/G_i_j (G_BLOCK_7)                     0.00       0.38 f
+  CARRY_GEN/G_GEN_4/G_k_1_j (G_BLOCK_6)                   0.00       0.38 f
+  CARRY_GEN/G_GEN_4/U2/ZN (AOI21_X1)                      0.05       0.44 r
+  CARRY_GEN/G_GEN_4/U1/ZN (INV_X1)                        0.05       0.49 f
+  CARRY_GEN/G_GEN_4/G_i_j (G_BLOCK_6)                     0.00       0.49 f
+  CARRY_GEN/G_GEN_EACH_A_5_2/G_k_1_j (G_BLOCK_2)          0.00       0.49 f
+  CARRY_GEN/G_GEN_EACH_A_5_2/U2/ZN (AOI21_X1)             0.06       0.55 r
+  CARRY_GEN/G_GEN_EACH_A_5_2/U1/ZN (INV_X1)               0.04       0.58 f
+  CARRY_GEN/G_GEN_EACH_A_5_2/G_i_j (G_BLOCK_2)            0.00       0.58 f
+  CARRY_GEN/C[5] (CARRY_GENERATOR_NBIT32_DCARRY4)         0.00       0.58 f
+  SUM_GEN/Ci[6] (SUM_GENERATOR_NBIT4_NBLOCK8)             0.00       0.58 f
+  SUM_GEN/CARRY_BLOCK_7/Ci (CARRY_SELECT_BLOCK_N4_2)      0.00       0.58 f
+  SUM_GEN/CARRY_BLOCK_7/MUX21/SEL (MUX21_GENERIC_N4_2)
+                                                          0.00       0.58 f
+  SUM_GEN/CARRY_BLOCK_7/MUX21/U4/Z (MUX2_X1)              0.07       0.65 r
+  SUM_GEN/CARRY_BLOCK_7/MUX21/Y[0] (MUX21_GENERIC_N4_2)
+                                                          0.00       0.65 r
+  SUM_GEN/CARRY_BLOCK_7/S[0] (CARRY_SELECT_BLOCK_N4_2)
+                                                          0.00       0.65 r
+  SUM_GEN/S[24] (SUM_GENERATOR_NBIT4_NBLOCK8)             0.00       0.65 r
+  S[24] (out)                                             0.00       0.65 r
+  data arrival time                                                  0.65
+  --------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: A[0] (input port)
+  Endpoint: S[25] (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  P4_ADDER_NBIT32_DCARRY4
+                     5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  input external delay                                    0.00       0.00 f
+  A[0] (in)                                               0.00       0.00 f
+  CARRY_GEN/A[0] (CARRY_GENERATOR_NBIT32_DCARRY4)         0.00       0.00 f
+  CARRY_GEN/PG_NET_INIT/A[0] (PG_NET_NBIT32)              0.00       0.00 f
+  CARRY_GEN/PG_NET_INIT/C_0_NET_GEN/A (PG_NET_GENERATOR_0)
+                                                          0.00       0.00 f
+  CARRY_GEN/PG_NET_INIT/C_0_NET_GEN/U1/Z (XOR2_X1)        0.08       0.08 f
+  CARRY_GEN/PG_NET_INIT/C_0_NET_GEN/P (PG_NET_GENERATOR_0)
+                                                          0.00       0.08 f
+  CARRY_GEN/PG_NET_INIT/U3/ZN (AOI21_X1)                  0.04       0.12 r
+  CARRY_GEN/PG_NET_INIT/U2/ZN (INV_X1)                    0.02       0.14 f
+  CARRY_GEN/PG_NET_INIT/G_NET[1] (PG_NET_NBIT32)          0.00       0.14 f
+  CARRY_GEN/G_GEN_1/G_k_1_j (G_BLOCK_0)                   0.00       0.14 f
+  CARRY_GEN/G_GEN_1/U2/ZN (AOI21_X1)                      0.04       0.18 r
+  CARRY_GEN/G_GEN_1/U1/ZN (INV_X1)                        0.02       0.21 f
+  CARRY_GEN/G_GEN_1/G_i_j (G_BLOCK_0)                     0.00       0.21 f
+  CARRY_GEN/G_GEN_2/G_k_1_j (G_BLOCK_8)                   0.00       0.21 f
+  CARRY_GEN/G_GEN_2/U2/ZN (AOI21_X1)                      0.04       0.25 r
+  CARRY_GEN/G_GEN_2/U1/ZN (INV_X1)                        0.04       0.29 f
+  CARRY_GEN/G_GEN_2/G_i_j (G_BLOCK_8)                     0.00       0.29 f
+  CARRY_GEN/G_GEN_3/G_k_1_j (G_BLOCK_7)                   0.00       0.29 f
+  CARRY_GEN/G_GEN_3/U2/ZN (AOI21_X1)                      0.05       0.34 r
+  CARRY_GEN/G_GEN_3/U1/ZN (INV_X1)                        0.04       0.38 f
+  CARRY_GEN/G_GEN_3/G_i_j (G_BLOCK_7)                     0.00       0.38 f
+  CARRY_GEN/G_GEN_4/G_k_1_j (G_BLOCK_6)                   0.00       0.38 f
+  CARRY_GEN/G_GEN_4/U2/ZN (AOI21_X1)                      0.05       0.44 r
+  CARRY_GEN/G_GEN_4/U1/ZN (INV_X1)                        0.05       0.49 f
+  CARRY_GEN/G_GEN_4/G_i_j (G_BLOCK_6)                     0.00       0.49 f
+  CARRY_GEN/G_GEN_EACH_A_5_2/G_k_1_j (G_BLOCK_2)          0.00       0.49 f
+  CARRY_GEN/G_GEN_EACH_A_5_2/U2/ZN (AOI21_X1)             0.06       0.55 r
+  CARRY_GEN/G_GEN_EACH_A_5_2/U1/ZN (INV_X1)               0.04       0.58 f
+  CARRY_GEN/G_GEN_EACH_A_5_2/G_i_j (G_BLOCK_2)            0.00       0.58 f
+  CARRY_GEN/C[5] (CARRY_GENERATOR_NBIT32_DCARRY4)         0.00       0.58 f
+  SUM_GEN/Ci[6] (SUM_GENERATOR_NBIT4_NBLOCK8)             0.00       0.58 f
+  SUM_GEN/CARRY_BLOCK_7/Ci (CARRY_SELECT_BLOCK_N4_2)      0.00       0.58 f
+  SUM_GEN/CARRY_BLOCK_7/MUX21/SEL (MUX21_GENERIC_N4_2)
+                                                          0.00       0.58 f
+  SUM_GEN/CARRY_BLOCK_7/MUX21/U3/Z (MUX2_X1)              0.07       0.65 r
+  SUM_GEN/CARRY_BLOCK_7/MUX21/Y[1] (MUX21_GENERIC_N4_2)
+                                                          0.00       0.65 r
+  SUM_GEN/CARRY_BLOCK_7/S[1] (CARRY_SELECT_BLOCK_N4_2)
+                                                          0.00       0.65 r
+  SUM_GEN/S[25] (SUM_GENERATOR_NBIT4_NBLOCK8)             0.00       0.65 r
+  S[25] (out)                                             0.00       0.65 r
+  data arrival time                                                  0.65
+  --------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: A[0] (input port)
+  Endpoint: S[26] (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  P4_ADDER_NBIT32_DCARRY4
+                     5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  input external delay                                    0.00       0.00 f
+  A[0] (in)                                               0.00       0.00 f
+  CARRY_GEN/A[0] (CARRY_GENERATOR_NBIT32_DCARRY4)         0.00       0.00 f
+  CARRY_GEN/PG_NET_INIT/A[0] (PG_NET_NBIT32)              0.00       0.00 f
+  CARRY_GEN/PG_NET_INIT/C_0_NET_GEN/A (PG_NET_GENERATOR_0)
+                                                          0.00       0.00 f
+  CARRY_GEN/PG_NET_INIT/C_0_NET_GEN/U1/Z (XOR2_X1)        0.08       0.08 f
+  CARRY_GEN/PG_NET_INIT/C_0_NET_GEN/P (PG_NET_GENERATOR_0)
+                                                          0.00       0.08 f
+  CARRY_GEN/PG_NET_INIT/U3/ZN (AOI21_X1)                  0.04       0.12 r
+  CARRY_GEN/PG_NET_INIT/U2/ZN (INV_X1)                    0.02       0.14 f
+  CARRY_GEN/PG_NET_INIT/G_NET[1] (PG_NET_NBIT32)          0.00       0.14 f
+  CARRY_GEN/G_GEN_1/G_k_1_j (G_BLOCK_0)                   0.00       0.14 f
+  CARRY_GEN/G_GEN_1/U2/ZN (AOI21_X1)                      0.04       0.18 r
+  CARRY_GEN/G_GEN_1/U1/ZN (INV_X1)                        0.02       0.21 f
+  CARRY_GEN/G_GEN_1/G_i_j (G_BLOCK_0)                     0.00       0.21 f
+  CARRY_GEN/G_GEN_2/G_k_1_j (G_BLOCK_8)                   0.00       0.21 f
+  CARRY_GEN/G_GEN_2/U2/ZN (AOI21_X1)                      0.04       0.25 r
+  CARRY_GEN/G_GEN_2/U1/ZN (INV_X1)                        0.04       0.29 f
+  CARRY_GEN/G_GEN_2/G_i_j (G_BLOCK_8)                     0.00       0.29 f
+  CARRY_GEN/G_GEN_3/G_k_1_j (G_BLOCK_7)                   0.00       0.29 f
+  CARRY_GEN/G_GEN_3/U2/ZN (AOI21_X1)                      0.05       0.34 r
+  CARRY_GEN/G_GEN_3/U1/ZN (INV_X1)                        0.04       0.38 f
+  CARRY_GEN/G_GEN_3/G_i_j (G_BLOCK_7)                     0.00       0.38 f
+  CARRY_GEN/G_GEN_4/G_k_1_j (G_BLOCK_6)                   0.00       0.38 f
+  CARRY_GEN/G_GEN_4/U2/ZN (AOI21_X1)                      0.05       0.44 r
+  CARRY_GEN/G_GEN_4/U1/ZN (INV_X1)                        0.05       0.49 f
+  CARRY_GEN/G_GEN_4/G_i_j (G_BLOCK_6)                     0.00       0.49 f
+  CARRY_GEN/G_GEN_EACH_A_5_2/G_k_1_j (G_BLOCK_2)          0.00       0.49 f
+  CARRY_GEN/G_GEN_EACH_A_5_2/U2/ZN (AOI21_X1)             0.06       0.55 r
+  CARRY_GEN/G_GEN_EACH_A_5_2/U1/ZN (INV_X1)               0.04       0.58 f
+  CARRY_GEN/G_GEN_EACH_A_5_2/G_i_j (G_BLOCK_2)            0.00       0.58 f
+  CARRY_GEN/C[5] (CARRY_GENERATOR_NBIT32_DCARRY4)         0.00       0.58 f
+  SUM_GEN/Ci[6] (SUM_GENERATOR_NBIT4_NBLOCK8)             0.00       0.58 f
+  SUM_GEN/CARRY_BLOCK_7/Ci (CARRY_SELECT_BLOCK_N4_2)      0.00       0.58 f
+  SUM_GEN/CARRY_BLOCK_7/MUX21/SEL (MUX21_GENERIC_N4_2)
+                                                          0.00       0.58 f
+  SUM_GEN/CARRY_BLOCK_7/MUX21/U2/Z (MUX2_X1)              0.07       0.65 r
+  SUM_GEN/CARRY_BLOCK_7/MUX21/Y[2] (MUX21_GENERIC_N4_2)
+                                                          0.00       0.65 r
+  SUM_GEN/CARRY_BLOCK_7/S[2] (CARRY_SELECT_BLOCK_N4_2)
+                                                          0.00       0.65 r
+  SUM_GEN/S[26] (SUM_GENERATOR_NBIT4_NBLOCK8)             0.00       0.65 r
+  S[26] (out)                                             0.00       0.65 r
+  data arrival time                                                  0.65
+  --------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: A[0] (input port)
+  Endpoint: S[27] (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  P4_ADDER_NBIT32_DCARRY4
+                     5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  input external delay                                    0.00       0.00 f
+  A[0] (in)                                               0.00       0.00 f
+  CARRY_GEN/A[0] (CARRY_GENERATOR_NBIT32_DCARRY4)         0.00       0.00 f
+  CARRY_GEN/PG_NET_INIT/A[0] (PG_NET_NBIT32)              0.00       0.00 f
+  CARRY_GEN/PG_NET_INIT/C_0_NET_GEN/A (PG_NET_GENERATOR_0)
+                                                          0.00       0.00 f
+  CARRY_GEN/PG_NET_INIT/C_0_NET_GEN/U1/Z (XOR2_X1)        0.08       0.08 f
+  CARRY_GEN/PG_NET_INIT/C_0_NET_GEN/P (PG_NET_GENERATOR_0)
+                                                          0.00       0.08 f
+  CARRY_GEN/PG_NET_INIT/U3/ZN (AOI21_X1)                  0.04       0.12 r
+  CARRY_GEN/PG_NET_INIT/U2/ZN (INV_X1)                    0.02       0.14 f
+  CARRY_GEN/PG_NET_INIT/G_NET[1] (PG_NET_NBIT32)          0.00       0.14 f
+  CARRY_GEN/G_GEN_1/G_k_1_j (G_BLOCK_0)                   0.00       0.14 f
+  CARRY_GEN/G_GEN_1/U2/ZN (AOI21_X1)                      0.04       0.18 r
+  CARRY_GEN/G_GEN_1/U1/ZN (INV_X1)                        0.02       0.21 f
+  CARRY_GEN/G_GEN_1/G_i_j (G_BLOCK_0)                     0.00       0.21 f
+  CARRY_GEN/G_GEN_2/G_k_1_j (G_BLOCK_8)                   0.00       0.21 f
+  CARRY_GEN/G_GEN_2/U2/ZN (AOI21_X1)                      0.04       0.25 r
+  CARRY_GEN/G_GEN_2/U1/ZN (INV_X1)                        0.04       0.29 f
+  CARRY_GEN/G_GEN_2/G_i_j (G_BLOCK_8)                     0.00       0.29 f
+  CARRY_GEN/G_GEN_3/G_k_1_j (G_BLOCK_7)                   0.00       0.29 f
+  CARRY_GEN/G_GEN_3/U2/ZN (AOI21_X1)                      0.05       0.34 r
+  CARRY_GEN/G_GEN_3/U1/ZN (INV_X1)                        0.04       0.38 f
+  CARRY_GEN/G_GEN_3/G_i_j (G_BLOCK_7)                     0.00       0.38 f
+  CARRY_GEN/G_GEN_4/G_k_1_j (G_BLOCK_6)                   0.00       0.38 f
+  CARRY_GEN/G_GEN_4/U2/ZN (AOI21_X1)                      0.05       0.44 r
+  CARRY_GEN/G_GEN_4/U1/ZN (INV_X1)                        0.05       0.49 f
+  CARRY_GEN/G_GEN_4/G_i_j (G_BLOCK_6)                     0.00       0.49 f
+  CARRY_GEN/G_GEN_EACH_A_5_2/G_k_1_j (G_BLOCK_2)          0.00       0.49 f
+  CARRY_GEN/G_GEN_EACH_A_5_2/U2/ZN (AOI21_X1)             0.06       0.55 r
+  CARRY_GEN/G_GEN_EACH_A_5_2/U1/ZN (INV_X1)               0.04       0.58 f
+  CARRY_GEN/G_GEN_EACH_A_5_2/G_i_j (G_BLOCK_2)            0.00       0.58 f
+  CARRY_GEN/C[5] (CARRY_GENERATOR_NBIT32_DCARRY4)         0.00       0.58 f
+  SUM_GEN/Ci[6] (SUM_GENERATOR_NBIT4_NBLOCK8)             0.00       0.58 f
+  SUM_GEN/CARRY_BLOCK_7/Ci (CARRY_SELECT_BLOCK_N4_2)      0.00       0.58 f
+  SUM_GEN/CARRY_BLOCK_7/MUX21/SEL (MUX21_GENERIC_N4_2)
+                                                          0.00       0.58 f
+  SUM_GEN/CARRY_BLOCK_7/MUX21/U1/Z (MUX2_X1)              0.07       0.65 r
+  SUM_GEN/CARRY_BLOCK_7/MUX21/Y[3] (MUX21_GENERIC_N4_2)
+                                                          0.00       0.65 r
+  SUM_GEN/CARRY_BLOCK_7/S[3] (CARRY_SELECT_BLOCK_N4_2)
+                                                          0.00       0.65 r
+  SUM_GEN/S[27] (SUM_GENERATOR_NBIT4_NBLOCK8)             0.00       0.65 r
+  S[27] (out)                                             0.00       0.65 r
+  data arrival time                                                  0.65
+  --------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: A[0] (input port)
+  Endpoint: S[28] (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  P4_ADDER_NBIT32_DCARRY4
+                     5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  input external delay                                    0.00       0.00 f
+  A[0] (in)                                               0.00       0.00 f
+  CARRY_GEN/A[0] (CARRY_GENERATOR_NBIT32_DCARRY4)         0.00       0.00 f
+  CARRY_GEN/PG_NET_INIT/A[0] (PG_NET_NBIT32)              0.00       0.00 f
+  CARRY_GEN/PG_NET_INIT/C_0_NET_GEN/A (PG_NET_GENERATOR_0)
+                                                          0.00       0.00 f
+  CARRY_GEN/PG_NET_INIT/C_0_NET_GEN/U1/Z (XOR2_X1)        0.08       0.08 f
+  CARRY_GEN/PG_NET_INIT/C_0_NET_GEN/P (PG_NET_GENERATOR_0)
+                                                          0.00       0.08 f
+  CARRY_GEN/PG_NET_INIT/U3/ZN (AOI21_X1)                  0.04       0.12 r
+  CARRY_GEN/PG_NET_INIT/U2/ZN (INV_X1)                    0.02       0.14 f
+  CARRY_GEN/PG_NET_INIT/G_NET[1] (PG_NET_NBIT32)          0.00       0.14 f
+  CARRY_GEN/G_GEN_1/G_k_1_j (G_BLOCK_0)                   0.00       0.14 f
+  CARRY_GEN/G_GEN_1/U2/ZN (AOI21_X1)                      0.04       0.18 r
+  CARRY_GEN/G_GEN_1/U1/ZN (INV_X1)                        0.02       0.21 f
+  CARRY_GEN/G_GEN_1/G_i_j (G_BLOCK_0)                     0.00       0.21 f
+  CARRY_GEN/G_GEN_2/G_k_1_j (G_BLOCK_8)                   0.00       0.21 f
+  CARRY_GEN/G_GEN_2/U2/ZN (AOI21_X1)                      0.04       0.25 r
+  CARRY_GEN/G_GEN_2/U1/ZN (INV_X1)                        0.04       0.29 f
+  CARRY_GEN/G_GEN_2/G_i_j (G_BLOCK_8)                     0.00       0.29 f
+  CARRY_GEN/G_GEN_3/G_k_1_j (G_BLOCK_7)                   0.00       0.29 f
+  CARRY_GEN/G_GEN_3/U2/ZN (AOI21_X1)                      0.05       0.34 r
+  CARRY_GEN/G_GEN_3/U1/ZN (INV_X1)                        0.04       0.38 f
+  CARRY_GEN/G_GEN_3/G_i_j (G_BLOCK_7)                     0.00       0.38 f
+  CARRY_GEN/G_GEN_4/G_k_1_j (G_BLOCK_6)                   0.00       0.38 f
+  CARRY_GEN/G_GEN_4/U2/ZN (AOI21_X1)                      0.05       0.44 r
+  CARRY_GEN/G_GEN_4/U1/ZN (INV_X1)                        0.05       0.49 f
+  CARRY_GEN/G_GEN_4/G_i_j (G_BLOCK_6)                     0.00       0.49 f
+  CARRY_GEN/G_GEN_EACH_A_5_1/G_k_1_j (G_BLOCK_3)          0.00       0.49 f
+  CARRY_GEN/G_GEN_EACH_A_5_1/U2/ZN (AOI21_X1)             0.06       0.55 r
+  CARRY_GEN/G_GEN_EACH_A_5_1/U1/ZN (INV_X1)               0.04       0.58 f
+  CARRY_GEN/G_GEN_EACH_A_5_1/G_i_j (G_BLOCK_3)            0.00       0.58 f
+  CARRY_GEN/C[6] (CARRY_GENERATOR_NBIT32_DCARRY4)         0.00       0.58 f
+  SUM_GEN/Ci[7] (SUM_GENERATOR_NBIT4_NBLOCK8)             0.00       0.58 f
+  SUM_GEN/CARRY_BLOCK_8/Ci (CARRY_SELECT_BLOCK_N4_1)      0.00       0.58 f
+  SUM_GEN/CARRY_BLOCK_8/MUX21/SEL (MUX21_GENERIC_N4_1)
+                                                          0.00       0.58 f
+  SUM_GEN/CARRY_BLOCK_8/MUX21/U4/Z (MUX2_X1)              0.07       0.65 r
+  SUM_GEN/CARRY_BLOCK_8/MUX21/Y[0] (MUX21_GENERIC_N4_1)
+                                                          0.00       0.65 r
+  SUM_GEN/CARRY_BLOCK_8/S[0] (CARRY_SELECT_BLOCK_N4_1)
+                                                          0.00       0.65 r
+  SUM_GEN/S[28] (SUM_GENERATOR_NBIT4_NBLOCK8)             0.00       0.65 r
+  S[28] (out)                                             0.00       0.65 r
+  data arrival time                                                  0.65
+  --------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: A[0] (input port)
+  Endpoint: S[29] (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  P4_ADDER_NBIT32_DCARRY4
+                     5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  input external delay                                    0.00       0.00 f
+  A[0] (in)                                               0.00       0.00 f
+  CARRY_GEN/A[0] (CARRY_GENERATOR_NBIT32_DCARRY4)         0.00       0.00 f
+  CARRY_GEN/PG_NET_INIT/A[0] (PG_NET_NBIT32)              0.00       0.00 f
+  CARRY_GEN/PG_NET_INIT/C_0_NET_GEN/A (PG_NET_GENERATOR_0)
+                                                          0.00       0.00 f
+  CARRY_GEN/PG_NET_INIT/C_0_NET_GEN/U1/Z (XOR2_X1)        0.08       0.08 f
+  CARRY_GEN/PG_NET_INIT/C_0_NET_GEN/P (PG_NET_GENERATOR_0)
+                                                          0.00       0.08 f
+  CARRY_GEN/PG_NET_INIT/U3/ZN (AOI21_X1)                  0.04       0.12 r
+  CARRY_GEN/PG_NET_INIT/U2/ZN (INV_X1)                    0.02       0.14 f
+  CARRY_GEN/PG_NET_INIT/G_NET[1] (PG_NET_NBIT32)          0.00       0.14 f
+  CARRY_GEN/G_GEN_1/G_k_1_j (G_BLOCK_0)                   0.00       0.14 f
+  CARRY_GEN/G_GEN_1/U2/ZN (AOI21_X1)                      0.04       0.18 r
+  CARRY_GEN/G_GEN_1/U1/ZN (INV_X1)                        0.02       0.21 f
+  CARRY_GEN/G_GEN_1/G_i_j (G_BLOCK_0)                     0.00       0.21 f
+  CARRY_GEN/G_GEN_2/G_k_1_j (G_BLOCK_8)                   0.00       0.21 f
+  CARRY_GEN/G_GEN_2/U2/ZN (AOI21_X1)                      0.04       0.25 r
+  CARRY_GEN/G_GEN_2/U1/ZN (INV_X1)                        0.04       0.29 f
+  CARRY_GEN/G_GEN_2/G_i_j (G_BLOCK_8)                     0.00       0.29 f
+  CARRY_GEN/G_GEN_3/G_k_1_j (G_BLOCK_7)                   0.00       0.29 f
+  CARRY_GEN/G_GEN_3/U2/ZN (AOI21_X1)                      0.05       0.34 r
+  CARRY_GEN/G_GEN_3/U1/ZN (INV_X1)                        0.04       0.38 f
+  CARRY_GEN/G_GEN_3/G_i_j (G_BLOCK_7)                     0.00       0.38 f
+  CARRY_GEN/G_GEN_4/G_k_1_j (G_BLOCK_6)                   0.00       0.38 f
+  CARRY_GEN/G_GEN_4/U2/ZN (AOI21_X1)                      0.05       0.44 r
+  CARRY_GEN/G_GEN_4/U1/ZN (INV_X1)                        0.05       0.49 f
+  CARRY_GEN/G_GEN_4/G_i_j (G_BLOCK_6)                     0.00       0.49 f
+  CARRY_GEN/G_GEN_EACH_A_5_1/G_k_1_j (G_BLOCK_3)          0.00       0.49 f
+  CARRY_GEN/G_GEN_EACH_A_5_1/U2/ZN (AOI21_X1)             0.06       0.55 r
+  CARRY_GEN/G_GEN_EACH_A_5_1/U1/ZN (INV_X1)               0.04       0.58 f
+  CARRY_GEN/G_GEN_EACH_A_5_1/G_i_j (G_BLOCK_3)            0.00       0.58 f
+  CARRY_GEN/C[6] (CARRY_GENERATOR_NBIT32_DCARRY4)         0.00       0.58 f
+  SUM_GEN/Ci[7] (SUM_GENERATOR_NBIT4_NBLOCK8)             0.00       0.58 f
+  SUM_GEN/CARRY_BLOCK_8/Ci (CARRY_SELECT_BLOCK_N4_1)      0.00       0.58 f
+  SUM_GEN/CARRY_BLOCK_8/MUX21/SEL (MUX21_GENERIC_N4_1)
+                                                          0.00       0.58 f
+  SUM_GEN/CARRY_BLOCK_8/MUX21/U3/Z (MUX2_X1)              0.07       0.65 r
+  SUM_GEN/CARRY_BLOCK_8/MUX21/Y[1] (MUX21_GENERIC_N4_1)
+                                                          0.00       0.65 r
+  SUM_GEN/CARRY_BLOCK_8/S[1] (CARRY_SELECT_BLOCK_N4_1)
+                                                          0.00       0.65 r
+  SUM_GEN/S[29] (SUM_GENERATOR_NBIT4_NBLOCK8)             0.00       0.65 r
+  S[29] (out)                                             0.00       0.65 r
+  data arrival time                                                  0.65
+  --------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: A[0] (input port)
+  Endpoint: S[30] (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  P4_ADDER_NBIT32_DCARRY4
+                     5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  input external delay                                    0.00       0.00 f
+  A[0] (in)                                               0.00       0.00 f
+  CARRY_GEN/A[0] (CARRY_GENERATOR_NBIT32_DCARRY4)         0.00       0.00 f
+  CARRY_GEN/PG_NET_INIT/A[0] (PG_NET_NBIT32)              0.00       0.00 f
+  CARRY_GEN/PG_NET_INIT/C_0_NET_GEN/A (PG_NET_GENERATOR_0)
+                                                          0.00       0.00 f
+  CARRY_GEN/PG_NET_INIT/C_0_NET_GEN/U1/Z (XOR2_X1)        0.08       0.08 f
+  CARRY_GEN/PG_NET_INIT/C_0_NET_GEN/P (PG_NET_GENERATOR_0)
+                                                          0.00       0.08 f
+  CARRY_GEN/PG_NET_INIT/U3/ZN (AOI21_X1)                  0.04       0.12 r
+  CARRY_GEN/PG_NET_INIT/U2/ZN (INV_X1)                    0.02       0.14 f
+  CARRY_GEN/PG_NET_INIT/G_NET[1] (PG_NET_NBIT32)          0.00       0.14 f
+  CARRY_GEN/G_GEN_1/G_k_1_j (G_BLOCK_0)                   0.00       0.14 f
+  CARRY_GEN/G_GEN_1/U2/ZN (AOI21_X1)                      0.04       0.18 r
+  CARRY_GEN/G_GEN_1/U1/ZN (INV_X1)                        0.02       0.21 f
+  CARRY_GEN/G_GEN_1/G_i_j (G_BLOCK_0)                     0.00       0.21 f
+  CARRY_GEN/G_GEN_2/G_k_1_j (G_BLOCK_8)                   0.00       0.21 f
+  CARRY_GEN/G_GEN_2/U2/ZN (AOI21_X1)                      0.04       0.25 r
+  CARRY_GEN/G_GEN_2/U1/ZN (INV_X1)                        0.04       0.29 f
+  CARRY_GEN/G_GEN_2/G_i_j (G_BLOCK_8)                     0.00       0.29 f
+  CARRY_GEN/G_GEN_3/G_k_1_j (G_BLOCK_7)                   0.00       0.29 f
+  CARRY_GEN/G_GEN_3/U2/ZN (AOI21_X1)                      0.05       0.34 r
+  CARRY_GEN/G_GEN_3/U1/ZN (INV_X1)                        0.04       0.38 f
+  CARRY_GEN/G_GEN_3/G_i_j (G_BLOCK_7)                     0.00       0.38 f
+  CARRY_GEN/G_GEN_4/G_k_1_j (G_BLOCK_6)                   0.00       0.38 f
+  CARRY_GEN/G_GEN_4/U2/ZN (AOI21_X1)                      0.05       0.44 r
+  CARRY_GEN/G_GEN_4/U1/ZN (INV_X1)                        0.05       0.49 f
+  CARRY_GEN/G_GEN_4/G_i_j (G_BLOCK_6)                     0.00       0.49 f
+  CARRY_GEN/G_GEN_EACH_A_5_1/G_k_1_j (G_BLOCK_3)          0.00       0.49 f
+  CARRY_GEN/G_GEN_EACH_A_5_1/U2/ZN (AOI21_X1)             0.06       0.55 r
+  CARRY_GEN/G_GEN_EACH_A_5_1/U1/ZN (INV_X1)               0.04       0.58 f
+  CARRY_GEN/G_GEN_EACH_A_5_1/G_i_j (G_BLOCK_3)            0.00       0.58 f
+  CARRY_GEN/C[6] (CARRY_GENERATOR_NBIT32_DCARRY4)         0.00       0.58 f
+  SUM_GEN/Ci[7] (SUM_GENERATOR_NBIT4_NBLOCK8)             0.00       0.58 f
+  SUM_GEN/CARRY_BLOCK_8/Ci (CARRY_SELECT_BLOCK_N4_1)      0.00       0.58 f
+  SUM_GEN/CARRY_BLOCK_8/MUX21/SEL (MUX21_GENERIC_N4_1)
+                                                          0.00       0.58 f
+  SUM_GEN/CARRY_BLOCK_8/MUX21/U2/Z (MUX2_X1)              0.07       0.65 r
+  SUM_GEN/CARRY_BLOCK_8/MUX21/Y[2] (MUX21_GENERIC_N4_1)
+                                                          0.00       0.65 r
+  SUM_GEN/CARRY_BLOCK_8/S[2] (CARRY_SELECT_BLOCK_N4_1)
+                                                          0.00       0.65 r
+  SUM_GEN/S[30] (SUM_GENERATOR_NBIT4_NBLOCK8)             0.00       0.65 r
+  S[30] (out)                                             0.00       0.65 r
+  data arrival time                                                  0.65
+  --------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: A[0] (input port)
+  Endpoint: S[31] (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  P4_ADDER_NBIT32_DCARRY4
+                     5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  input external delay                                    0.00       0.00 f
+  A[0] (in)                                               0.00       0.00 f
+  CARRY_GEN/A[0] (CARRY_GENERATOR_NBIT32_DCARRY4)         0.00       0.00 f
+  CARRY_GEN/PG_NET_INIT/A[0] (PG_NET_NBIT32)              0.00       0.00 f
+  CARRY_GEN/PG_NET_INIT/C_0_NET_GEN/A (PG_NET_GENERATOR_0)
+                                                          0.00       0.00 f
+  CARRY_GEN/PG_NET_INIT/C_0_NET_GEN/U1/Z (XOR2_X1)        0.08       0.08 f
+  CARRY_GEN/PG_NET_INIT/C_0_NET_GEN/P (PG_NET_GENERATOR_0)
+                                                          0.00       0.08 f
+  CARRY_GEN/PG_NET_INIT/U3/ZN (AOI21_X1)                  0.04       0.12 r
+  CARRY_GEN/PG_NET_INIT/U2/ZN (INV_X1)                    0.02       0.14 f
+  CARRY_GEN/PG_NET_INIT/G_NET[1] (PG_NET_NBIT32)          0.00       0.14 f
+  CARRY_GEN/G_GEN_1/G_k_1_j (G_BLOCK_0)                   0.00       0.14 f
+  CARRY_GEN/G_GEN_1/U2/ZN (AOI21_X1)                      0.04       0.18 r
+  CARRY_GEN/G_GEN_1/U1/ZN (INV_X1)                        0.02       0.21 f
+  CARRY_GEN/G_GEN_1/G_i_j (G_BLOCK_0)                     0.00       0.21 f
+  CARRY_GEN/G_GEN_2/G_k_1_j (G_BLOCK_8)                   0.00       0.21 f
+  CARRY_GEN/G_GEN_2/U2/ZN (AOI21_X1)                      0.04       0.25 r
+  CARRY_GEN/G_GEN_2/U1/ZN (INV_X1)                        0.04       0.29 f
+  CARRY_GEN/G_GEN_2/G_i_j (G_BLOCK_8)                     0.00       0.29 f
+  CARRY_GEN/G_GEN_3/G_k_1_j (G_BLOCK_7)                   0.00       0.29 f
+  CARRY_GEN/G_GEN_3/U2/ZN (AOI21_X1)                      0.05       0.34 r
+  CARRY_GEN/G_GEN_3/U1/ZN (INV_X1)                        0.04       0.38 f
+  CARRY_GEN/G_GEN_3/G_i_j (G_BLOCK_7)                     0.00       0.38 f
+  CARRY_GEN/G_GEN_4/G_k_1_j (G_BLOCK_6)                   0.00       0.38 f
+  CARRY_GEN/G_GEN_4/U2/ZN (AOI21_X1)                      0.05       0.44 r
+  CARRY_GEN/G_GEN_4/U1/ZN (INV_X1)                        0.05       0.49 f
+  CARRY_GEN/G_GEN_4/G_i_j (G_BLOCK_6)                     0.00       0.49 f
+  CARRY_GEN/G_GEN_EACH_A_5_1/G_k_1_j (G_BLOCK_3)          0.00       0.49 f
+  CARRY_GEN/G_GEN_EACH_A_5_1/U2/ZN (AOI21_X1)             0.06       0.55 r
+  CARRY_GEN/G_GEN_EACH_A_5_1/U1/ZN (INV_X1)               0.04       0.58 f
+  CARRY_GEN/G_GEN_EACH_A_5_1/G_i_j (G_BLOCK_3)            0.00       0.58 f
+  CARRY_GEN/C[6] (CARRY_GENERATOR_NBIT32_DCARRY4)         0.00       0.58 f
+  SUM_GEN/Ci[7] (SUM_GENERATOR_NBIT4_NBLOCK8)             0.00       0.58 f
+  SUM_GEN/CARRY_BLOCK_8/Ci (CARRY_SELECT_BLOCK_N4_1)      0.00       0.58 f
+  SUM_GEN/CARRY_BLOCK_8/MUX21/SEL (MUX21_GENERIC_N4_1)
+                                                          0.00       0.58 f
+  SUM_GEN/CARRY_BLOCK_8/MUX21/U1/Z (MUX2_X1)              0.07       0.65 r
+  SUM_GEN/CARRY_BLOCK_8/MUX21/Y[3] (MUX21_GENERIC_N4_1)
+                                                          0.00       0.65 r
+  SUM_GEN/CARRY_BLOCK_8/S[3] (CARRY_SELECT_BLOCK_N4_1)
+                                                          0.00       0.65 r
+  SUM_GEN/S[31] (SUM_GENERATOR_NBIT4_NBLOCK8)             0.00       0.65 r
+  S[31] (out)                                             0.00       0.65 r
+  data arrival time                                                  0.65
+  --------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
